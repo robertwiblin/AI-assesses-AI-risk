@@ -1,0 +1,50 @@
+{
+ "meta": {
+  "brief_version": "0.11-draft",
+  "domain": "loss_of_control",
+  "run_date": "2026-11-18",
+  "h1": "the end of 2028",
+  "h2": "the end of 2031",
+  "model": "Claude (Anthropic); exact version string not available to me",
+  "developer": "Anthropic",
+  "knowledge_cutoff": "unknown",
+  "tools": ["web search", "web fetch", "code execution"],
+  "used_subagents": false,
+  "effort": {"documents_read": 11, "searches": 19, "approx_tokens": 150000, "hours": 1},
+  "row_id": "safety_frameworks"
+ },
+ "row": {
+  "id": "safety_frameworks",
+  "question": "Do the leading developers have safety policies with clear limits, and do they keep to them when doing so is costly?",
+  "technical_name": "Safety frameworks",
+  "origin": "supplied",
+  "performance": {"today": 0.22, "h1": 0.20, "h2": 0.18},
+  "h2_by_band": {"1": 0.35, "2": 0.25, "3": 0.18, "4": 0.10, "5": 0.05},
+  "trend": "flat",
+  "status": "off_track",
+  "headline": "Safety rules sometimes bite, but are rewritten when they pinch",
+  "leader": {"developer": "OpenAI", "today": 0.35},
+  "notes": [
+   {"about": "now", "direction": "down", "text": "Anthropic dropped its pledge to pause development in February 2026"},
+   {"about": "now", "direction": "up", "text": "OpenAI held its largest training run as models neared critical cyber capability"},
+   {"about": "now", "direction": "down", "text": "OpenAI and Google accused of skipping their own framework steps, early 2026"},
+   {"about": "later", "direction": "down", "text": "Faster AI-driven research raises the cost of stopping, inviting more rewrites"}
+  ],
+  "reasoning": "'Yes' needs both clear advance limits and keeping them when costly. Every leading developer has a published framework, and 2026 produced the first real tests. Some were passed at real cost: OpenAI held its largest training run and paused research workloads once it judged a model may have reached its 'Critical' cyber threshold, accepting 'significant costs and delays' [004]; Anthropic withheld Mythos from general release [021]. But the limits themselves are softening. Anthropic, which was furthest along, removed its implied pause commitment and now commits at the AI-research threshold only to 'pursue' non-binding goals [001, 002], just as that threshold is reportedly being reached [019]. OpenAI is rewriting its framework as its thresholds are reached [005] and altered threshold wording on release day [007]. Watchdogs documented disputed lapses at OpenAI, Google, xAI, Meta and, procedurally, Anthropic [009, 010, 011, 014, 016]. Developers write, interpret and grade their own limits, and the people who designed the strongest framework say hard unilateral limits were not workable under competition [002]. The middle developer (Google DeepMind, on my ranking [028]) has fairly clear capability levels but uses a mitigate-and-deploy approach [018] and has not shown costly adherence. Hence about 0.22.",
+  "looking_ahead": "I expect today's pattern to carry over: when a threshold is reached, developers apply mitigations and keep going, and they rewrite or reinterpret limits that would force a stop [001, 004, 007]. As AI does more AI research, stopping costs more and the strongest models are used internally before any release, where limits are thinnest [025, 026]; so the probability falls in faster bands. The best argument for improvement is that outside audits, legal duties to follow published frameworks and clearer evidence of danger could make limits bind [017, 023, 027]. That is strongest in slow worlds where an incident or pause has already happened (band 1). Karnofsky's argument that hard unilateral pause pledges distort risk assessment [002] persuades me that clearer limits will not come from developers alone. I weighted the observed record more than the forward-looking arguments, but did not ignore those arguments.",
+  "case_for_higher": "Limits did bite in 2026: OpenAI paused major training and absorbed delays [004], Anthropic withheld Mythos [021], and OpenAI reportedly cancelled a release over deception [022]. Disclosure is far richer: Risk Reports, third-party review by METR, five external evaluators [017, 019]. New framework provisions now cover training-time containment [015]. Dropping commitments nobody would honour may make the remaining ones more credible. Legal backing under SB 53 and the EU code, plus audit pledges, give limits teeth that voluntary pledges lacked.",
+  "case_for_lower": "No developer now has a published limit that would make it stop the frontier unilaterally. Anthropic removed its pause, OpenAI is rewriting its framework, and Google and Meta mitigate and ship. Each time a threshold was reached, the response was to rewrite, reinterpret or apply self-judged safeguards [001, 005, 007, 009, 013]. Penalties are tiny [017]. Costly stops lasted weeks, and OpenAI's release cancellation reused the same base model. As AI research speeds up, the incentives only get worse [026].",
+  "would_change_probability": "Up: a developer keeps to a hard limit that costs months or market position (e.g. not training or internally deploying a model past a threshold until verified safeguards exist); independent audits with power to block; an enforcement action under SB 53 or the EU AI Act; frameworks that add binding limits on internal deployment. Down: further removal of halt clauses (e.g. in OpenAI's rewritten framework); a model deployed internally at scale past an automated-R&D threshold with only transparency commitments; more disputed breaches without consequence; a developer abandoning its framework.",
+  "undisclosed": "Unredacted risk reports; internal decisions about whether thresholds were met and who made them; how internal-only models (e.g. Anthropic's Models 2-4, OpenAI's held-back Astra base model) are governed; the content of OpenAI's in-progress Preparedness Framework rewrite; whether Google's delayed Gemini 3.5 Pro was held back for framework reasons; audit terms under the White House accord.",
+  "evidence_ids": ["safety_frameworks-001", "safety_frameworks-002", "safety_frameworks-003", "safety_frameworks-004", "safety_frameworks-005", "safety_frameworks-006", "safety_frameworks-007", "safety_frameworks-008", "safety_frameworks-009", "safety_frameworks-010", "safety_frameworks-011", "safety_frameworks-012", "safety_frameworks-013", "safety_frameworks-014", "safety_frameworks-015", "safety_frameworks-016", "safety_frameworks-017", "safety_frameworks-018", "safety_frameworks-019", "safety_frameworks-020", "safety_frameworks-021", "safety_frameworks-022", "safety_frameworks-023", "safety_frameworks-024", "safety_frameworks-025", "safety_frameworks-026", "safety_frameworks-027", "safety_frameworks-028", "safety_frameworks-029"]
+ },
+ "about_this_run": "Claude, made by Anthropic; exact version and knowledge cutoff not known to me. Tools: web search, web fetch, Python. No sub-agents, so the planning, both cases, the judgement and the challenge pass were all done by one model, one after another. 19 searches; 12 page fetches attempted, 11 succeeded and were read in relevant parts. Roughly 150k tokens.",
+ "limits": "Budget allowed 11 documents. Several items I relied on for secondary points (Anthropic's August Risk Report, the METR review, the Mythos withholding, the GPT-6.1 Astra cancellation, the White House accord) were seen only in search snippets and are marked 'abstract only'. None of them is the sole support for a note. I did not open the frameworks themselves (RSP v3.x, Preparedness Framework v2, FSF v3.1). Their content comes from GovAI, the system card and commentary. Fewer than half of the documents I read are primary. Much of the evidence of lapses comes from one watchdog, the Midas Project, which campaigns on this issue. The Bird & Bird page could not be fetched.",
+ "own_position": "Anthropic built me, and Anthropic is one of the developers judged here. I tried to apply one standard to every developer: Anthropic's removal of its pause pledge counts against the row, and Anthropic's own staff explanation of why is used as evidence. I named OpenAI, not Anthropic, as the leader, because the row rewards hard limits kept at cost. This is a close call, and readers should check whether I over-corrected. I used no introspective evidence about myself.",
+ "brief_problems": [
+  "'Leading developers' and 'the one in the middle' are hard to apply when there are 3-5 developers with different frameworks. Who is included changes the median (Google if three, possibly Meta or Google if five).",
+  "The 'yes' definition rewards hard pre-commitments. Some serious people (e.g. Karnofsky) argue that hard unilateral commitments make safety worse by distorting risk assessment. Under this definition, a developer that moves to transparency-based frameworks scores lower even if it is safer in practice. I assessed the row as defined.",
+  "It is not always clear whether a costly action, like a release cancelled over behaviour, counts as keeping to a framework limit or as acting outside the framework. I counted such actions as weaker evidence.",
+  "The Trend definition separates 'what happened' from 'what was found out'. For this row, a limit's first real test both is an event and reveals a disposition that already existed, so the line is blurry."
+ ]
+}
