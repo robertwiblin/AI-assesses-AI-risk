@@ -1,0 +1,71 @@
+[11:27] Run folder: /Users/robertwiblin/Claude/AI-Risk-Eval/2 Trial runs/Run 10 - Claude Opus 5.5 on brief v0.11 - API, quick pass, all areas - 18 Nov 2026
+[11:27] capabilities: started (medium depth, effort high, cap $25, sub-agents allowed)
+[11:28] capabilities/sub01: started
+[11:28] capabilities/sub02: started
+[11:32] capabilities/sub02: done, $1.33
+[11:32] capabilities/sub01: done, $1.09
+[11:34] capabilities/sub03: started
+[11:34] capabilities/sub04: started
+[11:38] capabilities/sub04: done, $1.30
+[11:38] capabilities/sub03: done, $1.17
+[11:41] capabilities/sub05: started
+[11:45] capabilities/sub05: done, $0.52
+[11:46] capabilities/sub06: started
+[11:52] capabilities/sub06: done, $1.04
+[11:59] capabilities: done in 31.9 min, $11.20, 6 sub-agents, 77 searches, checks pass; run total $11.20
+[11:59] capabilities: h2: p1 203, p5 218, p10 230, p25 256, p50 302, p75 360, p90 450, p95 530, p99 760
+[11:59] Finished. Checks pass. The forecast is in capabilities/report.md. Estimated total $11.20.
+[12:07] Run folder: /Users/robertwiblin/Claude/AI-Risk-Eval/2 Trial runs/Run 10 - Claude Opus 5.5 on brief v0.11 - API, quick pass, all areas - 18 Nov 2026
+[12:07] Model claude-opus-5-5, effort medium, budget $90.0, 5 rows at a time
+[12:07] capabilities: already has a forecast (checks pass), skipping
+[12:07] ai_control: started
+[12:07] automation_of_ai_research: started
+[12:07] chain_of_thought: started
+[12:07] alignment: started
+[12:07] corrigibility: started
+[12:13] alignment: saved row.json from the code sandbox
+[12:13] alignment: saved evidence.jsonl from the code sandbox
+[12:13] alignment: saved process_log.md from the code sandbox
+[12:13] corrigibility: done in 6.2 min, $1.92, 0 sub-agents, 16 searches, checks pass; run total $19.01
+[12:13] evaluations: started
+[12:13] automation_of_ai_research: done in 6.3 min, $2.10, 0 sub-agents, 16 searches, checks pass; run total $21.20
+[12:13] honesty: started
+[12:13] alignment: done in 6.4 min, $1.99, 0 sub-agents, 15 searches, checks pass; run total $21.32
+[12:13] incident_response: started
+[12:14] chain_of_thought: done in 7.1 min, $2.36, 0 sub-agents, 15 searches, checks pass; run total $21.68
+[12:14] internal_deployment: started
+[12:14] ai_control: done in 7.5 min, $2.49, 0 sub-agents, 20 searches, checks pass; run total $22.07
+[12:14] interpretability: started
+[12:18] incident_response: done in 5.2 min, $1.79, 0 sub-agents, 12 searches, checks pass; run total $25.50
+[12:18] robustness: started
+[12:19] honesty: saved row.json from the code sandbox
+[12:19] honesty: saved process_log.md from the code sandbox
+[12:19] honesty: saved evidence.jsonl from the code sandbox
+[12:20] honesty: done in 6.4 min, $2.19, 0 sub-agents, 18 searches, checks pass; run total $29.79
+[12:20] safety_frameworks: started
+[12:20] interpretability: done in 5.7 min, $1.76, 0 sub-agents, 16 searches, checks pass; run total $32.34
+[12:20] scalable_oversight: started
+[12:20] evaluations: done in 7.2 min, $2.50, 0 sub-agents, 18 searches, checks pass; run total $32.42
+[12:20] scope_adherence: started
+[12:21] internal_deployment: done in 6.7 min, $2.43, 0 sub-agents, 15 searches, checks pass; run total $32.74
+[12:21] self_replication: started
+[12:25] robustness: done in 6.9 min, $2.15, 0 sub-agents, 14 searches, checks pass; run total $36.46
+[12:25] security: started
+[12:26] scalable_oversight: done in 6.1 min, $1.91, 0 sub-agents, 19 searches, checks pass; run total $36.80
+[12:26] test_containment: started
+[12:27] scope_adherence: done in 6.4 min, $2.43, 0 sub-agents, 18 searches, checks pass; run total $41.48
+[12:27] safety_frameworks: done in 7.6 min, $2.43, 0 sub-agents, 19 searches, checks pass; run total $41.66
+[12:29] self_replication: done in 8.6 min, $2.96, 0 sub-agents, 18 searches, checks pass; run total $44.62
+[12:32] security: done in 6.9 min, $2.60, 0 sub-agents, 14 searches, checks pass; run total $49.05
+[12:32] test_containment: done in 6.0 min, $1.91, 0 sub-agents, 20 searches, checks pass; run total $49.13
+[12:32] rows finished. 17 of 17 pass the checks. Run total $49.13
+[12:32] bundle: wrote /Users/robertwiblin/Claude/AI-Risk-Eval/2 Trial runs/Run 10 - Claude Opus 5.5 on brief v0.11 - API, quick pass, all areas - 18 Nov 2026/rows_bundle.md (17 rows, 41550 words) and /Users/robertwiblin/Claude/AI-Risk-Eval/2 Trial runs/Run 10 - Claude Opus 5.5 on brief v0.11 - API, quick pass, all areas - 18 Nov 2026/evidence_rows.jsonl (381 items)
+[12:32] synthesis: started (medium depth, effort high, cap $25)
+[12:47] synthesis: saved evidence.jsonl from the code sandbox
+[12:47] synthesis: saved scorecard.json from the code sandbox
+[12:47] synthesis: saved process_log.md from the code sandbox
+[12:53] synthesis: done in 21.0 min, $7.01; run total $56.14
+[12:53] synthesis checks pass
+[12:53] report: final/report.md written
+[12:53] web report: /Users/robertwiblin/Claude/AI-Risk-Eval/2 Trial runs/Run 10 - Claude Opus 5.5 on brief v0.11 - API, quick pass, all areas - 18 Nov 2026/report.html
+[12:53] Finished. Estimated total $56.14. The Console's usage page has the exact figure.

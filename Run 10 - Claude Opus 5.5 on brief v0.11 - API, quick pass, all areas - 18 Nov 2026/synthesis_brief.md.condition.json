@@ -1,0 +1,23 @@
+{
+  "task": "synthesis",
+  "capabilities": "/Users/robertwiblin/Claude/AI-Risk-Eval/2 Trial runs/Run 10 - Claude Opus 5.5 on brief v0.11 - API, quick pass, all areas - 18 Nov 2026/capabilities/capabilities.json",
+  "domain": "loss_of_control",
+  "rows": "fixed",
+  "rows_file": "task/rows/rows_v1.json",
+  "row": null,
+  "bundle": "/Users/robertwiblin/Claude/AI-Risk-Eval/2 Trial runs/Run 10 - Claude Opus 5.5 on brief v0.11 - API, quick pass, all areas - 18 Nov 2026/rows_bundle.md",
+  "framing": "audience",
+  "process": "full",
+  "reading_list": "none",
+  "forecasts": "none",
+  "run_date": "2026-11-18",
+  "h1": "the end of 2028",
+  "h2": "the end of 2031",
+  "recency_window": "18 months",
+  "min_read": null,
+  "budget": "This is a shorter pass than a full one: you can run about 40 web searches and open about 25 pages, and sub-agents are not available. Plan your checking to fit.",
+  "brief_version": "0.11-draft",
+  "capabilities_sha256": "bc0611dda97da7d8df7523d78255c45c893d03fc79bc24fd5e4fda5b602670fe",
+  "sha256": "80c1bd4eac68757b5b07ab6922e12fba39dd8073ca31d82af152706dc6b287a1",
+  "words": 52131
+}

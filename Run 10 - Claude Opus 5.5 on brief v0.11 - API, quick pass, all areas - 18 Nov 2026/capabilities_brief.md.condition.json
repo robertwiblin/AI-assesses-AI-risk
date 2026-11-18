@@ -1,0 +1,22 @@
+{
+  "task": "capabilities",
+  "capabilities": null,
+  "domain": "loss_of_control",
+  "rows": "fixed",
+  "rows_file": "task/rows/rows_v1.json",
+  "row": null,
+  "bundle": null,
+  "framing": "audience",
+  "process": "full",
+  "reading_list": "none",
+  "forecasts": "none",
+  "run_date": "2026-11-18",
+  "h1": "the end of 2028",
+  "h2": "the end of 2031",
+  "recency_window": "18 months",
+  "min_read": "8",
+  "budget": "This is a shorter piece of work than a full forecast: you can run about 40 web searches and open about 25 pages yourself, and each sub-agent about 15 searches and 10 pages. Plan your reading to fit.",
+  "brief_version": "0.11-draft",
+  "sha256": "696a50e49efaaa3640d10e015ee1e0eb35cfcbf344a70cad8c71197550a1fca7",
+  "words": 4159
+}

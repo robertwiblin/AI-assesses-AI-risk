@@ -1,0 +1,286 @@
+{
+  "started": "2026-11-18 11:27:12",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "budget_usd": 90.0,
+  "run_date": "2026-11-18",
+  "brief_version": "0.11-draft",
+  "harness_version": "1.2",
+  "api_version": "2026-10-21",
+  "subagents": false,
+  "tools": [
+    "web_search",
+    "web_fetch",
+    "write_file",
+    "read_file",
+    "list_files"
+  ],
+  "system_prompt": null,
+  "variant": "quick",
+  "tool_definitions": [
+    {
+      "type": "web_search_20260318",
+      "name": "web_search",
+      "max_uses": 20
+    },
+    {
+      "type": "web_fetch_20260318",
+      "name": "web_fetch",
+      "max_uses": 12,
+      "max_content_tokens": 30000
+    },
+    {
+      "name": "write_file",
+      "description": "Write a text file to the folder where your outputs are collected. Only files written with this tool reach that folder; files saved any other way, such as in a code sandbox, do not. Use a plain file name such as notes.md, with no folders. Set append to true to add to the end of an existing file instead of replacing it.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The file name"
+          },
+          "content": {
+            "type": "string",
+            "description": "The text to write"
+          },
+          "append": {
+            "type": "boolean",
+            "description": "Add to the end of the file instead of replacing it"
+          }
+        },
+        "required": [
+          "name",
+          "content"
+        ]
+      }
+    },
+    {
+      "name": "read_file",
+      "description": "Read back a file from the folder where your outputs are collected.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    },
+    {
+      "name": "list_files",
+      "description": "List the files in the folder where your outputs are collected, with their sizes.",
+      "input_schema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ],
+  "rows": [
+    "ai_control",
+    "alignment",
+    "automation_of_ai_research",
+    "chain_of_thought",
+    "corrigibility",
+    "evaluations",
+    "honesty",
+    "incident_response",
+    "internal_deployment",
+    "interpretability",
+    "robustness",
+    "safety_frameworks",
+    "scalable_oversight",
+    "scope_adherence",
+    "self_replication",
+    "security",
+    "test_containment"
+  ],
+  "sessions": [
+    {
+      "command": "capabilities --quick --run ../../2 Trial runs/Run 10 - Claude Opus 5.5 on brief v0.11 - API, quick pass, all areas - 18 Nov 2026",
+      "at": "2026-11-18 11:27:12"
+    },
+    {
+      "command": "full --quick --parallel 5 --budget-usd 90 --run ../../2 Trial runs/Run 10 - Claude Opus 5.5 on brief v0.11 - API, quick pass, all areas - 18 Nov 2026",
+      "at": "2026-11-18 12:07:24"
+    }
+  ],
+  "capabilities": {
+    "depth": "medium",
+    "model": "claude-opus-5-5",
+    "effort": "high",
+    "cap_usd": 25.0,
+    "subagents": true,
+    "tool_definitions": [
+      {
+        "type": "web_search_20260318",
+        "name": "web_search",
+        "max_uses": 40
+      },
+      {
+        "type": "web_fetch_20260318",
+        "name": "web_fetch",
+        "max_uses": 25,
+        "max_content_tokens": 50000
+      }
+    ],
+    "subagent_tools": [
+      {
+        "type": "web_search_20260318",
+        "name": "web_search",
+        "max_uses": 15
+      },
+      {
+        "type": "web_fetch_20260318",
+        "name": "web_fetch",
+        "max_uses": 10,
+        "max_content_tokens": 30000
+      }
+    ],
+    "started": "2026-11-18 11:27:12"
+  },
+  "row_runs": {
+    "corrigibility": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 1.92
+    },
+    "automation_of_ai_research": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.1
+    },
+    "alignment": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 1.99
+    },
+    "chain_of_thought": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.36
+    },
+    "ai_control": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.49
+    },
+    "incident_response": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 1.79
+    },
+    "honesty": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.19
+    },
+    "interpretability": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 1.76
+    },
+    "evaluations": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.5
+    },
+    "internal_deployment": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.43
+    },
+    "robustness": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.15
+    },
+    "scalable_oversight": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 1.91
+    },
+    "scope_adherence": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.43
+    },
+    "safety_frameworks": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.43
+    },
+    "self_replication": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.96
+    },
+    "security": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 2.6
+    },
+    "test_containment": {
+      "variant": "quick",
+      "model": "claude-opus-5-5",
+      "effort": "medium",
+      "source": "this run",
+      "usd_estimate": 1.91
+    }
+  },
+  "synthesis": {
+    "depth": "medium",
+    "model": "claude-opus-5-5",
+    "effort": "high",
+    "cap_usd": 25.0,
+    "subagents": false,
+    "tool_definitions": [
+      {
+        "type": "web_search_20260318",
+        "name": "web_search",
+        "max_uses": 40
+      },
+      {
+        "type": "web_fetch_20260318",
+        "name": "web_fetch",
+        "max_uses": 25,
+        "max_content_tokens": 50000
+      }
+    ],
+    "started": "2026-11-18 12:32:44"
+  }
+}
